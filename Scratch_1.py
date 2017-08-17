@@ -8,6 +8,10 @@
 #     print("Your pet's name is {:>10s}.".format(pet_name))
 #
 # main()
+ADDITION = 2
+MULTIPLICATION = 3
+SUBTRACTION = 6
+DIVISION = 3
 
 
 def main():
@@ -23,22 +27,67 @@ def main():
 
 
 def first_addition(number):
-    number += 2
+    number += ADDITION
     return number
 
 
 def second_multiplication(number):
-    number *= 3
+    number *= MULTIPLICATION
     return number
 
 
 def third_subtraction(number):
-    number -= 6
+    number -= SUBTRACTION
     return number
 
 
 def forth_subtraction(number):
-    number /= 3
+    number /= DIVISION
     return number
+
+main()
+
+
+MAN = 1
+MULTIPLE = 7
+WIFE = 1
+SACK = 1
+CAT = 1
+KITTEN = 1
+
+
+def main():
+    wives = wife()
+    print(wives)
+    sacks_wives = wives * sack()
+    print(sacks_wives)
+    cats_sacks_wives = sacks_wives * cat()
+    print(cats_sacks_wives)
+    kittens_cats_sacks_wives = cats_sacks_wives * kitten()
+    print(kittens_cats_sacks_wives)
+    total = MAN + wives + sacks_wives + cats_sacks_wives + kittens_cats_sacks_wives
+    print("Wives {}, sacks {}, cats {}, kittens {}, total travelled {}.".format(wives, sacks_wives, cats_sacks_wives,
+                                                                                kittens_cats_sacks_wives, total))
+
+
+def wife():
+    wives = WIFE * MULTIPLE
+    return wives
+
+
+def sack():
+    sacks = SACK * MULTIPLE
+    return sacks
+
+
+def cat():
+    cats = CAT * MULTIPLE
+    return cats
+
+
+def kitten():
+    kittens = KITTEN * MULTIPLE
+    return kittens
+
 
 main()
