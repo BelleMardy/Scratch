@@ -91,3 +91,10 @@ def kitten():
 
 
 main()
+
+
+def main():
+    number = input("Enter a number: ")
+    print(str(number), int(number), float(number), sep=", ")
+
+main()
