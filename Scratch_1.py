@@ -58,13 +58,13 @@ KITTEN = 1
 
 def main():
     wives = wife()
-    print(wives)
+    print("{:>4d}".format(wives))
     sacks_wives = wives * sack()
-    print(sacks_wives)
+    print("{:>4d}".format(sacks_wives))
     cats_sacks_wives = sacks_wives * cat()
-    print(cats_sacks_wives)
+    print("{:>4d}".format(cats_sacks_wives))
     kittens_cats_sacks_wives = cats_sacks_wives * kitten()
-    print(kittens_cats_sacks_wives)
+    print("{:>4d}".format(kittens_cats_sacks_wives))
     total = MAN + wives + sacks_wives + cats_sacks_wives + kittens_cats_sacks_wives
     print("Wives {}, sacks {}, cats {}, kittens {}, total travelled {}.".format(wives, sacks_wives, cats_sacks_wives,
                                                                                 kittens_cats_sacks_wives, total))
