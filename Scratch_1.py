@@ -89,7 +89,6 @@ def kitten():
     kittens = KITTEN * MULTIPLE
     return kittens
 
-
 main()
 
 
