@@ -13,3 +13,38 @@ def odd_even(number):
 
 main()
 
+# 86 400 seconds in a day
+SECONDS = 60
+MINUTES = 60
+
+
+def main():
+    seconds = int(input("Enter seconds: "))
+    minutes = seconds // SECONDS
+    seconds_left_after_minutes_calculated = seconds % SECONDS
+    hours = minutes // MINUTES
+    minutes_left_after_hours_calculated = minutes % MINUTES
+    print("In {} there are {} hours, {} minutes, {} seconds,".format(seconds, hours,
+                                                                     minutes_left_after_hours_calculated,
+                                                                     seconds_left_after_minutes_calculated))
+
+
+#     seconds = int(input("Input number of seconds: "))
+#     print(int(minutes(seconds)))
+#     remaining_seconds = seconds % SECONDS
+#     print(int(remaining_seconds))
+#
+#     print(int(hours(minutes)))
+#
+#
+# def minutes(seconds):
+#     minutes = int(seconds // SECONDS)
+#     return minutes
+#
+#
+# # def hours(minutes):
+#     hours = int(minutes // MINUTES)
+#     return hours
+
+main()
+
